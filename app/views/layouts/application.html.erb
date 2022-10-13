@@ -10,7 +10,33 @@
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
+<header>
+  
+
+<nav class="navbar navbar-light bg-light">
+  <a style="padding-left: 15px" class="navbar-brand" href="/">Our Logo</a>
+
+ <form class="form-inline">
+    <div class = input-group>
+    
+      <%= link_to "Home", root_path, class: "btn btn-outline-success" %>
+      <div style = "padding-left: 10px">
+      <%= link_to "Get Quote", '#' , class: "btn btn-outline-success" %>
+      </div>
+      <div style="padding-left: 10px; padding-right: 15px">
+      <%= link_to "Contact", contact_path, class: "btn btn-outline-success" %>
+      </div>
+     
+    </div>
+  </form>
+
+</nav>
+
+</header>
+
   <body>
     <%= yield %>
   </body>
+  
+  
 </html>
